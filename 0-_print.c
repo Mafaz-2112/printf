@@ -44,12 +44,12 @@ int _printf(const char *format, ...)
 		else
 		{
 			print_buffer(buffer, &buff_ind);
-			flags = get_flags(format, &i);
-			width = get_width(format, &i, list);
-			precision = get_precision(format, &i, list);
-			size = get_size(format, &i);
+			flags = h_flags(format, &i);
+			width = h_width(format, &i, list);
+			precision = h_precision(format, &i, list);
+			size = h_size(format, &i);
 			++i;
-			pr = handle_print(format, &i, list, buffer,
+			pr = h_print(format, &i, list, buffer,
 				flags, width, precision, size);
 			if (pr == -1)
 				return (-1);
@@ -58,5 +58,5 @@ int _printf(const char *format, ...)
 	}
 	print_buffer(buffer, &buff_ind);
 	va_end(list);
-	return (printed_ch);
+	return (printed_cha);
 }

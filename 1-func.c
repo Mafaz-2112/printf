@@ -135,7 +135,7 @@ int printf_ine(va_list types, char buffer[],
 	long int i = va_arg(types, long int);
 	unsigned long int numb;
 
-	i = con_si_num(size, i);
+	i = con_si_nu(size, i);
 
 	if (i == 0)
 		buffer[a--] = '0';
