@@ -78,7 +78,7 @@ int write_number(int is_negative, int end, char buffer[],
 	else if (flags & F_SPACE)
 		ex_c = ' ';
 
-	return (write_num(ind, buffer, flags, width, precision,
+	return (write_num(end, buffer, flags, width, precision,
 		leen, pad, ex_c));
 }
 
@@ -184,7 +184,7 @@ int write_unsgnd(int is_ne, int end,
 	if ((flags & F_ZERO) && !(flags & F_MINUS))
 		pad = '0';
 
-	if (width > length)
+	if (width > leen)
 	{
 		for (i = 0; i < width - leen; i++)
 			buffer[i] = pad;

@@ -37,7 +37,7 @@ int h_printf(const char *ft, int *end, va_list list, char buffer[],
 		{
 			--(*end);
 			while (ft[*end] != ' ' && ft[*end] != '%')
-				--(*execve);
+				--(*end);
 			if (ft[*end] == ' ')
 				--(*end);
 			return (1);

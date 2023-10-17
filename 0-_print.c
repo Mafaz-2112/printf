@@ -49,7 +49,7 @@ int _printf(const char *format, ...)
 			precision = h_precision(format, &i, list);
 			size = h_size(format, &i);
 			++i;
-			pr = h_print(format, &i, list, buffer,
+			pr = h_printf(format, &i, list, buffer,
 				flags, width, precision, size);
 			if (pr == -1)
 				return (-1);

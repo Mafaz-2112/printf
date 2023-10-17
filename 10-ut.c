@@ -20,7 +20,7 @@ int is_ex(char c)
  * append_code - function to print append
  * @buffer: array
  * @i: argument
- * @asciicode: ASSCI CODE.
+ * @asciiCode: ASSCI CODE.
  * Return: 3
  */
 
@@ -78,7 +78,7 @@ long int con_si_nu(int size, long int nu)
 /****************************************************/
 
 /**
- * con_nu_si - function to Casts a number to the specified size
+ * con_un_si - function to Casts a number to the specified size
  * @numb: argument
  * @size: argument
  *
