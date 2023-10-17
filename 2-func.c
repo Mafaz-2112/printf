@@ -150,7 +150,7 @@ int printf_hex(va_list types, char buffer[],
  * @size: specifier
  * Return: function
  */
-int print_hexU(va_list types, char buffer[],
+int printf_hexU(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
 {
 	return (printf_hexal(types, "0123456789ABCDEF", buffer,
